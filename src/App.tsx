@@ -29,6 +29,14 @@ const App = () => (
         </Routes>
         <Footer />
       </BrowserRouter>
+      <a
+        className="whatsapp-float"
+        href="https://api.whatsapp.com/send?phone=254710273966"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        WhatsApp
+      </a>
     </TooltipProvider>
   </QueryClientProvider>
 );
