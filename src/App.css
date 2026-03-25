@@ -73,7 +73,7 @@
 
 .whatsapp-float:hover {
   transform: scale(1.08);
-  box-shadow: 0 12px 26px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 12px 26px rgba(0, 0, 0, 0.3), 0 0 20px rgba(37, 211, 102, 0.4);
 }
 
 .whatsapp-icon {

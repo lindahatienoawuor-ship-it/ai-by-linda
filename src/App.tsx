@@ -10,6 +10,7 @@ import Services from "./pages/Services";
 import Results from "./pages/Results";
 import Booking from "./pages/Booking";
 import NotFound from "./pages/NotFound";
+import "./App.css";
 
 const queryClient = new QueryClient();
 
@@ -31,7 +32,7 @@ const App = () => (
       </BrowserRouter>
       <a
         className="whatsapp-float"
-        href="https://wa.me/254116008544"
+        href="https://wa.me/254710273966?text=Hi%20I%E2%80%99m%20interested%20in%20your%20programs.%20Can%20you%20share%20more%20details%3F"
         target="_blank"
         rel="noopener noreferrer"
         aria-label="Chat with us on WhatsApp"
