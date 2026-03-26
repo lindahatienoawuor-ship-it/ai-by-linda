@@ -202,7 +202,7 @@ const Index = () => {
 
           <AnimatedSection className="text-center mt-8">
             <p className="font-body text-sm text-muted-foreground mb-4">Every package includes hosting setup, 1 round of revisions, and a handover walkthrough.</p>
-            <CtaButton to="/services">View Full Pricing →</CtaButton>
+            <CtaButton to="/services">View Services →</CtaButton>
           </AnimatedSection>
         </div>
       </section>
@@ -214,7 +214,7 @@ const Index = () => {
             {[
               { big: "3–7", small: "Days average delivery time" },
               { big: "100%", small: "Done-for-you, no DIY required" },
-              { big: "KES", small: "Flat-rate pricing, zero surprises" },
+              { big: "24/7", small: "Support available" },
               { big: "✅", small: "Proudly built for learners across Kenya" },
             ].map((s, i) => (
               <div key={i}>
@@ -294,7 +294,7 @@ const Index = () => {
             </p>
             <div className="flex flex-wrap justify-center gap-4 mb-6">
               <CtaButton to="/book">Book Your Free Call →</CtaButton>
-              <CtaButton to="/services" variant="ghost">See full pricing</CtaButton>
+              <CtaButton to="/services" variant="ghost">View All Services</CtaButton>
             </div>
             <p className="font-body text-xs text-muted-foreground">
               ✓ Free audit · ✓ No obligation · ✓ Response within 24 hours

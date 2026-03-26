@@ -7,7 +7,7 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 
-const guarantees = ["✓ Flat-rate pricing", "✓ 50% deposit to start", "✓ 1 revision round included", "✓ Delivered in 3–10 days", "✓ Handover walkthrough video", "✓ Hosting setup included"];
+const guarantees = ["✓ Transparent process", "✓ 50% deposit to start", "✓ 1 revision round included", "✓ Delivered in 3–10 days", "✓ Handover walkthrough video", "✓ Hosting setup included"];
 
 const packages = [
   {
@@ -52,7 +52,7 @@ const retainerFeatures = [
 
 const comparisonRows = [
   { label: "Delivery time", linda: "3–10 days", agency: "2–6 months", freelancer: "Unknown", diy: "You do all the work" },
-  { label: "Flat-rate pricing", linda: "✓", agency: "✗", freelancer: "✗", diy: "✗" },
+  { label: "Transparent process", linda: "✓", agency: "✗", freelancer: "✗", diy: "✗" },
   { label: "AI-powered builds", linda: "✓", agency: "✗", freelancer: "Rarely", diy: "✗" },
   { label: "M-Pesa integration", linda: "✓", agency: "Extra cost", freelancer: "Maybe", diy: "✗" },
   { label: "Handover walkthrough", linda: "✓", agency: "✗", freelancer: "Rarely", diy: "N/A" },
@@ -85,7 +85,7 @@ const Services = () => {
         <div className="absolute top-0 right-0 w-[500px] h-[500px] rounded-full opacity-15" style={{ background: "radial-gradient(circle, hsl(8 79% 57% / 0.3), transparent 70%)" }} />
         <div className="relative max-w-4xl mx-auto px-[5%] text-center">
           <AnimatedSection>
-            <SectionEyebrow>Services & Pricing</SectionEyebrow>
+            <SectionEyebrow>Services</SectionEyebrow>
             <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold leading-[1.1] mb-6">
               Everything you need to<br />show up, stand out,<br />and grow online.
             </h1>
