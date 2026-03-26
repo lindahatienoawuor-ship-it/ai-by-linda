@@ -57,7 +57,6 @@ const comparisonRows = [
   { label: "M-Pesa integration", linda: "✓", agency: "Extra cost", freelancer: "Maybe", diy: "✗" },
   { label: "Handover walkthrough", linda: "✓", agency: "✗", freelancer: "Rarely", diy: "N/A" },
   { label: "Kenyan market knowledge", linda: "✓", agency: "Sometimes", freelancer: "Rarely", diy: "✗" },
-  { label: "Starting price", linda: "KES 25,000", agency: "KES 200,000+", freelancer: "Unpredictable", diy: "Your time + monthly fees" },
 ];
 
 const processSteps = [

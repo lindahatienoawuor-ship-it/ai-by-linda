@@ -80,12 +80,6 @@ const Index = () => {
                     </div>
                     <span className="ml-auto text-[10px] font-body font-medium text-green-400 bg-green-400/10 px-2 py-0.5 rounded-full">Open</span>
                   </div>
-                  <div className="space-y-2 text-xs font-body">
-                    <div className="flex justify-between text-muted-foreground"><span>🌐 Starter Website</span><span className="text-foreground">From 25K</span></div>
-                    <div className="flex justify-between text-muted-foreground"><span>🚀 Pro Website</span><span className="text-foreground">From 60K</span></div>
-                    <div className="flex justify-between text-muted-foreground"><span>🛒 E-commerce Store</span><span className="text-foreground">From 100K</span></div>
-                    <div className="flex justify-between text-muted-foreground"><span>🤖 AI Chatbot</span><span className="text-foreground">From 30K</span></div>
-                  </div>
                   <Link to="/book" className="mt-3 w-full block text-center text-xs font-body font-semibold py-2 rounded-md bg-primary text-primary-foreground hover:bg-coral-light transition-colors">
                     Book a Free Call →
                   </Link>
@@ -107,7 +101,7 @@ const Index = () => {
               </h1>
 
               <p className="font-body text-base md:text-lg text-muted-foreground leading-relaxed mb-8 max-w-xl">
-                I'm Linda. I build <span className="text-foreground font-medium">AI-powered websites, e-commerce stores, chatbots and automations</span> for schools, NGOs, and businesses across Kenya — delivered in days, fully done for you, at a flat price.
+                I'm Linda. I build <span className="text-foreground font-medium">AI-powered websites, e-commerce stores, chatbots and automations</span> for schools, NGOs, and businesses across Kenya — delivered in days, fully done for you.
               </p>
 
               <div className="flex flex-wrap gap-4 mb-10">
@@ -118,8 +112,8 @@ const Index = () => {
               <div className="flex gap-8 md:gap-12">
                 {[
                   { big: "3–7", small: "Days to deliver" },
-                  { big: "Flat", small: "Rate pricing" },
                   { big: "100%", small: "Done for you" },
+                  { big: "24/7", small: "Support" },
                 ].map((stat, i) => (
                   <div key={i} className="text-center">
                     <p className="font-display text-2xl md:text-3xl font-bold text-foreground">{stat.big}</p>
@@ -185,7 +179,7 @@ const Index = () => {
             <SectionHeading>
               Everything your organization needs<br />to show up and grow online.
             </SectionHeading>
-            <p className="font-body text-muted-foreground mt-4">Fixed prices. Clear deliverables. No tech jargon. Just results.</p>
+            <p className="font-body text-muted-foreground mt-4">Clear deliverables. No tech jargon. Just results.</p>
           </AnimatedSection>
 
           <div className="grid md:grid-cols-3 gap-6">
