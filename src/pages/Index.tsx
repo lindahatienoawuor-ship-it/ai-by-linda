@@ -95,13 +95,11 @@ const Index = () => {
               </div>
 
               <h1 className="font-display text-4xl md:text-5xl lg:text-[3.5rem] font-bold leading-[1.1] mb-6">
-                Your school deserves<br />
-                <span className="italic text-primary">a website that works</span><br />
-                as hard as you do.
+                Helping Your Business Shine Online
               </h1>
 
               <p className="font-body text-base md:text-lg text-muted-foreground leading-relaxed mb-8 max-w-xl">
-                I'm Linda. I build <span className="text-foreground font-medium">AI-powered websites, e-commerce stores, chatbots and automations</span> for schools, NGOs, and businesses across Kenya — delivered in days, fully done for you.
+                Think of Lindah as an "AI powered" strategist who is making your business stand out and attract clients effortlessly from Google visibility to social media presence.
               </p>
 
               <div className="flex flex-wrap gap-4 mb-10">
