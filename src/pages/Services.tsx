@@ -13,31 +13,31 @@ const packages = [
   {
     icon: "🌐", title: "Starter Website", badge: null,
     tagline: "Perfect for schools, churches, NGOs and businesses that need a credible online home — fast.",
-    price: "From 25K KES", timeline: "⚡ Delivered in 3–5 days",
+    timeline: "⚡ Delivered in 3–5 days",
     features: ["Up to 5 pages (Home, About, Services, Gallery, Contact)", "Fully mobile-responsive design", "Contact form & WhatsApp button", "Google Maps integration", "Basic SEO setup (titles, descriptions)", "Hosted on Netlify or Vercel"],
     also: ["Domain connection support", "1 round of revisions", "Loom handover walkthrough"],
   },
   {
     icon: "🚀", title: "Pro Website", badge: "⭐ Most Popular",
     tagline: "A powerful dynamic site you can manage yourself — with a built-in CMS, blog, events and more.",
-    price: "From 60K KES", timeline: "⚡ Delivered in 5–7 days",
+    timeline: "⚡ Delivered in 5–7 days",
     features: ["Up to 10 pages — fully designed", "Dynamic content system (Supabase CMS)", "News / blog / events section you can update", "Newsletter signup with email automation", "SEO-optimized structure", "Google Analytics setup", "Password-protected admin area"],
     also: ["Everything in Starter", "Priority delivery", "30-day post-launch support"],
   },
   {
     icon: "🛒", title: "E-commerce Store", badge: null,
     tagline: "A full online store — sell your products, accept M-Pesa payments, and manage orders with ease.",
-    price: "From 100K KES", timeline: "⚡ Delivered in 7–10 days",
+    timeline: "⚡ Delivered in 7–10 days",
     features: ["Full product catalogue (unlimited products)", "M-Pesa & card payment integration", "Order management dashboard", "Stock / inventory tracking", "Customer accounts & order history", "Delivery / shipping options", "Promo codes & discounts"],
     also: ["Everything in Pro", "M-Pesa testing & go-live support", "60-day post-launch support"],
   },
 ];
 
 const addons = [
-  { icon: "🤖", title: "AI Chatbot", price: "From KES 30,000", desc: "A smart AI assistant trained on your specific content — handles admissions enquiries, FAQs, product questions, and lead capture 24/7. No staff needed." },
-  { icon: "⚙️", title: "Automations & Workflows", price: "From KES 40,000", desc: "Automate the repetitive work — form submissions trigger emails, leads go into a spreadsheet, WhatsApp notifications fire automatically. Save hours every week." },
-  { icon: "📱", title: "AI Social Media Content", price: "From KES 15,000/mo", desc: "Monthly social media content — posts, captions, and graphics — created using AI and tailored to your brand voice. Posted for you or delivered ready to publish." },
-  { icon: "📧", title: "Email Marketing Setup", price: "From KES 20,000", desc: "A complete email list setup — signup forms, welcome sequences, and newsletter templates — so you can stay in touch with your audience automatically." },
+  { icon: "🤖", title: "AI Chatbot", desc: "A smart AI assistant trained on your specific content — handles admissions enquiries, FAQs, product questions, and lead capture 24/7. No staff needed." },
+  { icon: "⚙️", title: "Automations & Workflows", desc: "Automate the repetitive work — form submissions trigger emails, leads go into a spreadsheet, WhatsApp notifications fire automatically. Save hours every week." },
+  { icon: "📱", title: "AI Social Media Content", desc: "Monthly social media content — posts, captions, and graphics — created using AI and tailored to your brand voice. Posted for you or delivered ready to publish." },
+  { icon: "📧", title: "Email Marketing Setup", desc: "A complete email list setup — signup forms, welcome sequences, and newsletter templates — so you can stay in touch with your audience automatically." },
 ];
 
 const retainerFeatures = [
@@ -127,7 +127,6 @@ const Services = () => {
                   <span className="text-3xl mb-3">{pkg.icon}</span>
                   <h3 className="font-display text-xl font-bold mb-1">{pkg.title}</h3>
                   <p className="font-body text-xs text-muted-foreground mb-3">{pkg.tagline}</p>
-                  <p className="font-display text-2xl font-bold text-primary mb-1">{pkg.price}</p>
                   <p className="font-body text-xs text-muted-foreground mb-6">{pkg.timeline}</p>
                   <div className="space-y-2 mb-6">
                     {pkg.features.map((f, j) => (
@@ -150,22 +149,21 @@ const Services = () => {
       </section>
 
       {/* ADD-ONS */}
-      <section className="py-20 md:py-28" style={{ background: "hsl(37 56% 96%)" }}>
+      <section className="py-20 md:py-28 bg-secondary">
         <div className="max-w-6xl mx-auto px-[5%]">
           <AnimatedSection className="text-center max-w-3xl mx-auto mb-16">
             <SectionEyebrow>Add-ons & Upgrades</SectionEyebrow>
             <SectionHeading className="text-cream-foreground">Power up any package with smart add-ons.</SectionHeading>
-            <p className="font-body mt-4" style={{ color: "hsl(222 42% 7% / 0.6)" }}>These can be added to any package above, or booked as standalone services if you already have a website.</p>
+            <p className="font-body mt-4 text-muted">These can be added to any package above, or booked as standalone services if you already have a website.</p>
           </AnimatedSection>
 
           <div className="grid md:grid-cols-2 gap-6">
             {addons.map((addon, i) => (
               <AnimatedSection key={i} delay={i * 0.1}>
-                <div className="bg-foreground rounded-card p-6 md:p-8 border h-full" style={{ borderColor: "rgba(0,0,0,0.06)", boxShadow: "0 4px 24px rgba(0,0,0,0.06)" }}>
+                <div className="bg-card rounded-card p-6 md:p-8 border h-full" style={{ borderColor: "rgba(0,0,0,0.06)", boxShadow: "0 4px 24px rgba(0,0,0,0.06)" }}>
                   <span className="text-3xl mb-3 block">{addon.icon}</span>
                   <h3 className="font-display text-lg font-bold text-cream-foreground mb-1">{addon.title}</h3>
-                  <p className="font-body text-sm font-semibold text-primary mb-3">{addon.price}</p>
-                  <p className="font-body text-sm leading-relaxed" style={{ color: "hsl(222 42% 7% / 0.6)" }}>{addon.desc}</p>
+                  <p className="font-body text-sm leading-relaxed text-muted">{addon.desc}</p>
                 </div>
               </AnimatedSection>
             ))}
@@ -185,9 +183,7 @@ const Services = () => {
             </AnimatedSection>
             <AnimatedSection delay={0.2}>
               <DarkCard hover={false} className="relative">
-                <span className="absolute -top-3 right-6 px-3 py-1 text-xs font-body font-semibold rounded-full" style={{ background: "hsl(44 52% 54%)", color: "hsl(222 42% 7%)" }}>Premium</span>
-                <p className="font-display text-4xl font-bold text-primary mb-1">8K KES</p>
-                <p className="font-body text-sm text-muted-foreground mb-6">per month · cancel anytime</p>
+                <span className="absolute -top-3 right-6 px-3 py-1 text-xs font-body font-semibold rounded-full bg-primary text-primary-foreground">Premium</span>
                 <div className="space-y-3 mb-8">
                   {retainerFeatures.map((f, i) => (
                     <p key={i} className="font-body text-sm text-muted-foreground flex items-start gap-2">
@@ -203,21 +199,21 @@ const Services = () => {
       </section>
 
       {/* COMPARISON TABLE */}
-      <section className="py-20 md:py-28" style={{ background: "hsl(37 56% 96%)" }}>
+      <section className="py-20 md:py-28 bg-secondary">
         <div className="max-w-6xl mx-auto px-[5%]">
           <AnimatedSection className="text-center max-w-3xl mx-auto mb-12">
-            <SectionEyebrow>Why AI by Linda?</SectionEyebrow>
-            <SectionHeading className="text-cream-foreground">AI by Linda vs. everyone else.</SectionHeading>
-            <p className="font-body mt-4" style={{ color: "hsl(222 42% 7% / 0.6)" }}>See why organizations choose AI by Linda over traditional agencies, freelancers, and DIY website builders.</p>
+            <SectionEyebrow>Why AI by Lindah?</SectionEyebrow>
+            <SectionHeading className="text-cream-foreground">AI by Lindah vs. everyone else.</SectionHeading>
+            <p className="font-body mt-4 text-muted">See why organizations choose AI by Lindah over traditional agencies, freelancers, and DIY website builders.</p>
           </AnimatedSection>
 
           <AnimatedSection>
             <div className="overflow-x-auto">
-              <table className="w-full min-w-[640px] bg-foreground rounded-card overflow-hidden" style={{ boxShadow: "0 4px 24px rgba(0,0,0,0.06)" }}>
+              <table className="w-full min-w-[640px] bg-card rounded-card overflow-hidden" style={{ boxShadow: "0 4px 24px rgba(0,0,0,0.06)" }}>
                 <thead>
                   <tr className="border-b" style={{ borderColor: "rgba(0,0,0,0.08)" }}>
                     <th className="text-left p-4 font-body text-sm font-semibold text-cream-foreground">Feature</th>
-                    <th className="p-4 font-body text-sm font-semibold text-primary">AI by Linda</th>
+                    <th className="p-4 font-body text-sm font-semibold text-primary">AI by Lindah</th>
                     <th className="p-4 font-body text-sm font-semibold text-cream-foreground">Agency</th>
                     <th className="p-4 font-body text-sm font-semibold text-cream-foreground">Freelancer</th>
                     <th className="p-4 font-body text-sm font-semibold text-cream-foreground">DIY</th>
@@ -228,9 +224,9 @@ const Services = () => {
                     <tr key={i} className="border-b last:border-0" style={{ borderColor: "rgba(0,0,0,0.06)" }}>
                       <td className="p-4 font-body text-sm text-cream-foreground font-medium">{row.label}</td>
                       <td className="p-4 font-body text-sm text-center font-semibold text-primary">{row.linda}</td>
-                      <td className="p-4 font-body text-sm text-center" style={{ color: "hsl(222 42% 7% / 0.5)" }}>{row.agency}</td>
-                      <td className="p-4 font-body text-sm text-center" style={{ color: "hsl(222 42% 7% / 0.5)" }}>{row.freelancer}</td>
-                      <td className="p-4 font-body text-sm text-center" style={{ color: "hsl(222 42% 7% / 0.5)" }}>{row.diy}</td>
+                      <td className="p-4 font-body text-sm text-center text-muted">{row.agency}</td>
+                      <td className="p-4 font-body text-sm text-center text-muted">{row.freelancer}</td>
+                      <td className="p-4 font-body text-sm text-center text-muted">{row.diy}</td>
                     </tr>
                   ))}
                 </tbody>
@@ -264,21 +260,21 @@ const Services = () => {
       </section>
 
       {/* FAQ */}
-      <section className="py-20 md:py-28" style={{ background: "hsl(37 56% 96%)" }}>
+      <section className="py-20 md:py-28 bg-secondary">
         <div className="max-w-3xl mx-auto px-[5%]">
           <AnimatedSection className="text-center mb-12">
             <SectionHeading className="text-cream-foreground">Questions? Answered.</SectionHeading>
-            <p className="font-body mt-4" style={{ color: "hsl(222 42% 7% / 0.6)" }}>Everything you need to know before getting started.</p>
+            <p className="font-body mt-4 text-muted">Everything you need to know before getting started.</p>
           </AnimatedSection>
 
           <AnimatedSection>
             <Accordion type="single" collapsible className="space-y-3">
               {faqs.map((faq, i) => (
-                <AccordionItem key={i} value={`faq-${i}`} className="bg-foreground rounded-card-md border px-6" style={{ borderColor: "rgba(0,0,0,0.06)" }}>
+                <AccordionItem key={i} value={`faq-${i}`} className="bg-card rounded-card-md border px-6" style={{ borderColor: "rgba(0,0,0,0.06)" }}>
                   <AccordionTrigger className="font-body text-sm font-semibold text-cream-foreground py-5 hover:no-underline">
                     {faq.q}
                   </AccordionTrigger>
-                  <AccordionContent className="font-body text-sm leading-relaxed pb-5" style={{ color: "hsl(222 42% 7% / 0.6)" }}>
+                  <AccordionContent className="font-body text-sm leading-relaxed pb-5 text-muted">
                     {faq.a}
                   </AccordionContent>
                 </AccordionItem>

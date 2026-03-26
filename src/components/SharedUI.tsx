@@ -44,7 +44,7 @@ interface DarkCardProps {
   hover?: boolean;
 }
 export const DarkCard = ({ children, className = "", hover = true }: DarkCardProps) => (
-  <div className={`rounded-card border border-border p-6 md:p-8 transition-all duration-300 ${hover ? "hover:border-primary/30" : ""} ${className}`} style={{ background: "rgba(255,255,255,0.04)" }}>
+  <div className={`bg-card rounded-card border border-border p-6 md:p-8 transition-all duration-300 ${hover ? "hover:border-primary/30" : ""} ${className}`}>
     {children}
   </div>
 );
@@ -54,7 +54,7 @@ interface LightCardProps {
   className?: string;
 }
 export const LightCard = ({ children, className = "" }: LightCardProps) => (
-  <div className={`bg-foreground rounded-card p-6 md:p-8 border transition-all duration-300 hover:-translate-y-1 ${className}`} style={{ borderColor: "rgba(0,0,0,0.06)", boxShadow: "0 4px 24px rgba(0,0,0,0.06)" }}>
+  <div className={`bg-card rounded-card p-6 md:p-8 border transition-all duration-300 hover:-translate-y-1 ${className}`} style={{ borderColor: "rgba(0,0,0,0.06)", boxShadow: "0 4px 24px rgba(0,0,0,0.06)" }}>
     {children}
   </div>
 );

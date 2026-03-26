@@ -29,7 +29,7 @@ const reasons = [
   { icon: "🎯", title: "You'll get a real answer — not a sales deck", desc: "I don't use slides, I don't have a pitch. I listen. I ask questions. And then I tell you exactly what I'd do, what it costs, and whether it makes sense for your situation. If it doesn't — I'll say so." },
   { icon: "⚡", title: "You could have a live website in 7 days", desc: "If we start this week, you could have a fully built, live, professional website before the month ends. That's how fast this process moves when we're aligned." },
   { icon: "💰", title: "You'll know the price before you say yes", desc: "No surprises, no scope creep, no 'additional costs' halfway through. I give you a flat rate on the call. That's the price. Period." },
-  { icon: "🤝", title: "You'll know exactly who is building for you", desc: "You're not hiring an anonymous team. You're hiring me — Linda. I'll be on the call, and I'll be the one building your project from start to finish." },
+  { icon: "🤝", title: "You'll know exactly who is building for you", desc: "You're not hiring an anonymous team. You're hiring me — Lindah. I'll be on the call, and I'll be the one building your project from start to finish." },
   { icon: "🇰🇪", title: "You'll talk to someone who understands Kenya", desc: "M-Pesa integration, school term calendars, church giving culture, NGO donor trust — I understand the Kenyan context because I live and work here." },
   { icon: "🛡️", title: "You're financially protected from the start", desc: "50% deposit to begin, 50% only after you've reviewed and approved the work. If you're not happy, we fix it. That's my guarantee." },
 ];
@@ -182,7 +182,7 @@ const Booking = () => {
                   ))}
                 </div>
                 <blockquote className="mt-8 font-body text-sm italic text-muted-foreground border-l-2 border-primary pl-6">
-                  "I booked expecting a sales pitch. Instead, Linda told me I only needed the Starter package — not the Pro one I was leaning toward. She saved me KES 35,000 before we'd even started. That told me everything about the kind of person she is."
+                  "I booked expecting a sales pitch. Instead, Lindah told me I only needed the Starter package — not the Pro one I was leaning toward. She saved me KES 35,000 before we'd even started. That told me everything about the kind of person she is."
                   <footer className="mt-3 flex items-center gap-3 not-italic">
                     <div className="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center">
                       <span className="font-display text-xs font-bold text-primary">GM</span>
@@ -228,10 +228,10 @@ const Booking = () => {
                       <span className="text-5xl mb-4 block">🎉</span>
                       <h3 className="font-display text-2xl font-bold mb-4">Request sent.<br />You're on my radar.</h3>
                       <p className="font-body text-sm text-muted-foreground leading-relaxed mb-6">
-                        Linda will confirm your call slot within 24 hours — usually much faster. Check your WhatsApp and email.
+                        Lindah will confirm your call slot within 24 hours — usually much faster. Check your WhatsApp and email.
                       </p>
                       <p className="font-body text-sm text-muted-foreground">
-                        While you wait, <Link to="/results" className="text-primary hover:text-coral-light transition-colors">see what other clients say</Link> about working with AI by Linda.
+                        While you wait, <Link to="/results" className="text-primary hover:text-coral-light transition-colors">see what other clients say</Link> about working with AI by Lindah.
                       </p>
                     </DarkCard>
                   ) : (
@@ -240,10 +240,10 @@ const Booking = () => {
                         <span className="font-body text-xs text-muted-foreground">Takes 3 minutes to fill</span>
                       </div>
                       <h3 className="font-display text-xl font-bold mb-1">Request Your Free Call</h3>
-                      <p className="font-body text-sm text-muted-foreground mb-6">Fill this in and Linda confirms your slot within 24 hours — usually much sooner.</p>
+                      <p className="font-body text-sm text-muted-foreground mb-6">Fill this in and Lindah confirms your slot within 24 hours — usually much sooner.</p>
 
                       {Object.values(errors).some(Boolean) && (
-                        <p className="font-body text-xs text-destructive mb-4">Please fill in all required fields — they help Linda prepare for your call.</p>
+                        <p className="font-body text-xs text-destructive mb-4">Please fill in all required fields — they help Lindah prepare for your call.</p>
                       )}
 
                       <form onSubmit={handleSubmit} className="space-y-4">
@@ -319,21 +319,21 @@ const Booking = () => {
       </section>
 
       {/* REASONS */}
-      <section className="py-20 md:py-28" style={{ background: "hsl(37 56% 96%)" }}>
+      <section className="py-20 md:py-28 bg-secondary">
         <div className="max-w-6xl mx-auto px-[5%]">
           <AnimatedSection className="text-center max-w-3xl mx-auto mb-12">
-            <SectionEyebrow>Why clients choose AI by Linda</SectionEyebrow>
+            <SectionEyebrow>Why clients choose AI by Lindah</SectionEyebrow>
             <SectionHeading className="text-cream-foreground">Six reasons this call is worth<br />20 minutes of your day.</SectionHeading>
-            <p className="font-body mt-4" style={{ color: "hsl(222 42% 7% / 0.6)" }}>People who've taken this call consistently say the same thing: they wish they'd booked it sooner.</p>
+            <p className="font-body mt-4 text-muted">People who've taken this call consistently say the same thing: they wish they'd booked it sooner.</p>
           </AnimatedSection>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {reasons.map((r, i) => (
               <AnimatedSection key={i} delay={i * 0.08}>
-                <div className="bg-foreground rounded-card p-6 border h-full" style={{ borderColor: "rgba(0,0,0,0.06)", boxShadow: "0 4px 24px rgba(0,0,0,0.06)" }}>
+                <div className="bg-card rounded-card p-6 border h-full" style={{ borderColor: "rgba(0,0,0,0.06)", boxShadow: "0 4px 24px rgba(0,0,0,0.06)" }}>
                   <span className="text-2xl mb-3 block">{r.icon}</span>
                   <h3 className="font-display text-base font-bold text-cream-foreground mb-2">{r.title}</h3>
-                  <p className="font-body text-sm leading-relaxed" style={{ color: "hsl(222 42% 7% / 0.6)" }}>{r.desc}</p>
+                  <p className="font-body text-sm leading-relaxed text-muted">{r.desc}</p>
                 </div>
               </AnimatedSection>
             ))}
@@ -347,7 +347,7 @@ const Booking = () => {
           <AnimatedSection className="text-center max-w-3xl mx-auto mb-12">
             <SectionEyebrow>Let's be honest</SectionEyebrow>
             <SectionHeading>What this call<br />is not.</SectionHeading>
-            <p className="font-body text-muted-foreground mt-4">I know what a bad "free consultation" feels like. You book, someone reads a script at you, you feel cornered into a decision. This is the opposite of that. Here's what you will not find on this call.</p>
+            <p className="font-body text-muted mt-4">I know what a bad "free consultation" feels like. You book, someone reads a script at you, you feel cornered into a decision. This is the opposite of that. Here's what you will not find on this call.</p>
           </AnimatedSection>
 
           <div className="grid md:grid-cols-2 gap-6">
@@ -356,7 +356,7 @@ const Booking = () => {
                 <DarkCard>
                   <span className="text-2xl mb-2 block">{card.icon}</span>
                   <h3 className="font-display text-lg font-bold mb-2">{card.title}</h3>
-                  <p className="font-body text-sm text-muted-foreground leading-relaxed">{card.desc}</p>
+                  <p className="font-body text-sm text-muted leading-relaxed">{card.desc}</p>
                 </DarkCard>
               </AnimatedSection>
             ))}
@@ -365,7 +365,7 @@ const Booking = () => {
       </section>
 
       {/* FINAL CTA */}
-      <section className="py-20 md:py-28" style={{ background: "hsl(37 56% 96%)" }}>
+      <section className="py-20 md:py-28 bg-secondary">
         <div className="max-w-3xl mx-auto px-[5%] text-center">
           <AnimatedSection>
             <SectionEyebrow>One small step.</SectionEyebrow>
@@ -373,11 +373,11 @@ const Booking = () => {
               The best time to fix your digital presence was last year.<br />
               <span className="italic text-primary">The next best time is right now.</span>
             </SectionHeading>
-            <p className="font-body mt-6 mb-8 max-w-xl mx-auto leading-relaxed" style={{ color: "hsl(222 42% 7% / 0.6)" }}>
+            <p className="font-body mt-6 mb-8 max-w-xl mx-auto leading-relaxed text-muted">
               Every week without a website is a week where parents can't find you, donors can't trust you, and customers can't buy from you. The call costs nothing. The conversation is easy. And the result — if we're a good fit — could change how your organization shows up in the world completely.
             </p>
             <CtaButton to="/book">Book My Free Call →</CtaButton>
-            <p className="font-body text-sm mt-4" style={{ color: "hsl(222 42% 7% / 0.5)" }}>
+            <p className="font-body text-sm mt-4 text-muted">
               ↑ Scroll back up to the form
             </p>
           </AnimatedSection>

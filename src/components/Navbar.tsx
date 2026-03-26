@@ -17,10 +17,10 @@ const Navbar = () => {
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 h-[72px] flex items-center px-[5%] border-b border-border" style={{ background: "rgba(11,15,25,0.9)", backdropFilter: "blur(20px)", WebkitBackdropFilter: "blur(20px)" }}>
       <Link to="/" className="flex items-center gap-2 shrink-0">
-        <img src={logo} alt="AI by Linda" className="h-9 w-auto" />
+        <img src={logo} alt="AI by Lindah" className="h-9 w-auto" />
         <span className="font-display text-lg font-bold tracking-tight">
           <span className="text-foreground">AI by </span>
-          <span className="text-primary italic">Linda</span>
+          <span className="text-primary italic">Lindah</span>
         </span>
       </Link>
 
