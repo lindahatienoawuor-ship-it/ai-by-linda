@@ -81,7 +81,7 @@ const Services = () => {
   return (
     <main className="pt-[72px]">
       {/* HERO */}
-      <section className="relative py-20 md:py-28 bg-background overflow-hidden">
+      <section className="relative py-24 md:py-32 bg-background overflow-hidden">
         <div className="absolute top-0 right-0 w-[500px] h-[500px] rounded-full opacity-15" style={{ background: "radial-gradient(circle, hsl(8 79% 57% / 0.3), transparent 70%)" }} />
         <div className="relative max-w-4xl mx-auto px-[5%] text-center">
           <AnimatedSection>
@@ -97,7 +97,7 @@ const Services = () => {
       </section>
 
       {/* GUARANTEE STRIP */}
-      <section className="border-y border-border py-6" style={{ background: "rgba(255,255,255,0.02)" }}>
+      <section className="border-y border-border py-10" style={{ background: "rgba(255,255,255,0.02)" }}>
         <div className="max-w-6xl mx-auto px-[5%]">
           <div className="flex flex-wrap justify-center gap-4 md:gap-8">
             {guarantees.map((g) => (
@@ -108,7 +108,7 @@ const Services = () => {
       </section>
 
       {/* MAIN PACKAGES */}
-      <section className="py-20 md:py-28 bg-background">
+      <section className="py-24 md:py-32 bg-background">
         <div className="max-w-6xl mx-auto px-[5%]">
           <AnimatedSection className="text-center max-w-3xl mx-auto mb-16">
             <SectionEyebrow>Main Packages</SectionEyebrow>
@@ -148,7 +148,7 @@ const Services = () => {
       </section>
 
       {/* ADD-ONS */}
-      <section className="py-20 md:py-28 bg-secondary">
+      <section className="py-24 md:py-32 bg-secondary">
         <div className="max-w-6xl mx-auto px-[5%]">
           <AnimatedSection className="text-center max-w-3xl mx-auto mb-16">
             <SectionEyebrow>Add-ons & Upgrades</SectionEyebrow>

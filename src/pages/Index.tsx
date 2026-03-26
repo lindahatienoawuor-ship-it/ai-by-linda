@@ -62,7 +62,7 @@ const Index = () => {
         <div className="absolute inset-0 opacity-[0.03]" style={{ backgroundImage: "linear-gradient(rgba(255,255,255,.5) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,.5) 1px, transparent 1px)", backgroundSize: "60px 60px" }} />
         <div className="absolute top-0 right-0 w-[600px] h-[600px] rounded-full opacity-20" style={{ background: "radial-gradient(circle, hsl(18 58% 51% / 0.3), transparent 70%)" }} />
 
-        <div className="relative max-w-7xl mx-auto px-[5%] py-20 md:py-28 w-full">
+        <div className="relative max-w-7xl mx-auto px-[5%] py-24 md:py-32 w-full">
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
             {/* Left: Linda's photo */}
             <AnimatedSection className="flex justify-center lg:justify-end lg:order-2">
@@ -137,7 +137,7 @@ const Index = () => {
       </section>
 
       {/* PROBLEM SECTION */}
-      <section className="py-20 md:py-28 bg-secondary">
+      <section className="py-24 md:py-32 bg-secondary">
         <div className="max-w-6xl mx-auto px-[5%]">
           <AnimatedSection className="text-center max-w-3xl mx-auto mb-16">
             <SectionEyebrow>The Real Problem</SectionEyebrow>
@@ -170,7 +170,7 @@ const Index = () => {
       </section>
 
       {/* SERVICES TEASER */}
-      <section className="py-20 md:py-28 bg-background">
+      <section className="py-24 md:py-32 bg-background">
         <div className="max-w-6xl mx-auto px-[5%]">
           <AnimatedSection className="text-center max-w-3xl mx-auto mb-16">
             <SectionEyebrow>What I Build</SectionEyebrow>
@@ -206,7 +206,7 @@ const Index = () => {
       </section>
 
       {/* PROOF STRIP */}
-      <section className="py-12 md:py-16 bg-primary">
+      <section className="py-16 md:py-20 bg-gradient-to-r from-primary/95 via-primary/75 to-primary/95">
         <div className="max-w-6xl mx-auto px-[5%]">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
             {[
@@ -225,7 +225,7 @@ const Index = () => {
       </section>
 
       {/* HOW IT WORKS */}
-      <section className="py-20 md:py-28 bg-background">
+      <section className="py-24 md:py-32 bg-background">
         <div className="max-w-6xl mx-auto px-[5%]">
           <AnimatedSection className="text-center max-w-3xl mx-auto mb-16">
             <SectionEyebrow>The Process</SectionEyebrow>
@@ -250,7 +250,7 @@ const Index = () => {
       </section>
 
       {/* TESTIMONIALS */}
-      <section className="py-20 md:py-28 bg-secondary">
+        <section className="py-24 md:py-32 bg-secondary">
         <div className="max-w-6xl mx-auto px-[5%]">
           <AnimatedSection className="text-center mb-16">
             <SectionHeading className="text-cream-foreground">
@@ -280,7 +280,7 @@ const Index = () => {
       </section>
 
       {/* FINAL CTA */}
-      <section className="py-20 md:py-28 bg-background">
+      <section className="py-24 md:py-32 bg-background">
         <div className="max-w-3xl mx-auto px-[5%] text-center">
           <AnimatedSection>
             <SectionEyebrow>Ready to get started?</SectionEyebrow>
